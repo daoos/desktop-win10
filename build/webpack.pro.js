@@ -17,8 +17,18 @@ module.exports = merge(baseConfig, {
   mode: 'production',
   output: {
     path: config.prod.output,
-    filename: utils.assetsPath('js/[name].[chunkhash:8].js'),
-    chunkFilename: utils.assetsPath('js/[id].[chunkhash:8].js')
+    filename: 'desktop.min.js',
+    library: 'desktop',
+    libraryTarget: 'umd',
+    umdNamedDefine: true
+  },
+  externals: {
+    vue: {
+      root: 'Vue',
+      commonjs: 'vue',
+      commonjs2: 'vue',
+      amd: 'vue'
+    }
   },
   module: {
     rules: utils.cssLoaders({
@@ -32,19 +42,8 @@ module.exports = merge(baseConfig, {
     // new CleanWebpackPlugin(),
     // extract css into its own file
     new MiniCssExtractPlugin({
-      filename: utils.assetsPath('css/[name].[contenthash:8].css'),
+      filename: 'css/desktop.min.css',
       chunkFilename: utils.assetsPath('css/[name].[contenthash:8].css')
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'index.html',
-      template: 'index.html',
-      inject: true,
-      title: 'A vue project',
-      minify: {
-        removeComments: true,
-        collapseWhitespace: true,
-        removeAttributeQuotes: true
-      }
     }),
     new CopyWebpackPlugin([
       {

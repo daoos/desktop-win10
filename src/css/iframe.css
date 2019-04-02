@@ -1,0 +1,111 @@
+.win10-open-iframe {
+  background-color: transparent;
+  border: 1px solid #323232;
+}
+
+.win10-open-iframe .layui-layer-content {
+  background-color: white;
+  max-height: calc(100% - 42px);
+}
+
+.win10-open-iframe .layui-layer-title {
+  box-sizing: border-box;
+  background-color: rgba(49, 49, 50, 0.94);
+  padding-right: 160px;
+  color: white;
+}
+
+.win10-open-iframe.hide {
+  display: none;
+}
+
+.win10-open-iframe .layui-layer-min cite {
+  display: none;
+}
+
+.win10-open-iframe .layui-layer-max:hover {
+  background-image: none
+}
+
+.win10-open-iframe .layui-layer-max, .layui-layer-maxmin {
+  background: none
+}
+
+.win10-open-iframe .layui-layer-setwin a.layui-layer-close1:hover {
+  background: red;
+  color: #fff;
+  opacity: 1;
+}
+
+.win10-open-iframe .layui-layer-min::before {
+  content: "\f2d1";
+  color: white;
+  font: normal normal normal 14px/1 FontAwesome;
+}
+
+.win10-open-iframe .layui-layer-max::before {
+  content: "\f2d0";
+  color: white;
+  font: normal normal normal 14px/1 FontAwesome;
+}
+
+.win10-open-iframe .layui-layer-maxmin.layui-layer-max::before {
+  content: "\f2d2";
+  color: white;
+  font: normal normal normal 14px/1 FontAwesome;
+}
+
+.win10-open-iframe .layui-layer-close::before {
+  content: "\f2d3";
+  color: #fff;
+  font: normal normal normal 14px/1 FontAwesome;
+}
+
+.win10-open-iframe .layui-layer-min, .layui-layer-close, .layui-layer-max {
+  text-decoration: none;
+}
+
+.win10-open-iframe .layui-layer-ico {
+  background-image: none;
+}
+
+.win10-open-iframe .layui-layer-setwin {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  font-size: 0;
+  line-height: 40px;
+  height: 40px;
+}
+
+.win10-open-iframe .layui-layer-setwin a {
+  position: relative;
+  width: 30px;
+  height: 40px;
+  font-size: 13px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.win10-open-iframe .layui-layer-setwin a:hover {
+  background: #5d5d5d;
+}
+
+.win10-open-iframe .layui-layer-title .icon, #win10_btn_group_middle .btn_title .icon {
+  font-size: 15px;
+  padding: 1px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  display: inline-block;
+  border-radius: 3px;
+  text-align: center;
+  margin-right: 0.5em;
+}
+
+.win10-open-iframe .layui-layer-title img.icon{
+  width: 20px;
+  position: relative;
+  top: 5px;
+  margin-right: 0.5em;
+}

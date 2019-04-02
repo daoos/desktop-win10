@@ -75,7 +75,7 @@ export default {
     max-width: 880px;
     overflow: auto;
     padding-left: 10px;
-    z-index: 1000;
+    z-index: 19930000;
     overflow-y: hidden;
     transition: bottom 0.5s;
     &.hidden{

@@ -1,18 +1,16 @@
 const gulp = require('gulp');
 const cleanCSS = require('gulp-clean-css');
-const sass = require('gulp-sass');
-const rename = require('gulp-rename');
+const concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
 
 // 编译less
 gulp.task('css', function () {
-    gulp.src('../src/css/index.scss')
-        .pipe(sass())
+    gulp.src(['../src/css/index.css', '../dist/css/desktop.min.css'])
         .pipe(autoprefixer({
             browsers: ['last 2 versions', 'ie > 8']
         }))
         .pipe(cleanCSS())
-        .pipe(rename('cmp-basic.css'))
+        .pipe(concat('desktop.min.css'))
         .pipe(gulp.dest('../dist/css'));
 });
 

@@ -9,7 +9,7 @@ const utils = require('./utils')
 
 module.exports = {
   entry: {
-    app: './src/main.js'
+    app: './src/index.js'
   },
   output: {
     path: config.prod.output,

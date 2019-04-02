@@ -2,6 +2,7 @@
  * Created by HaijunZhang on 2019/3/28.
  */
 import $ from 'jquery'
+const layer = require('desktop-layer')
 class Desktop {
   constructor () {
     this.init()
@@ -164,7 +165,7 @@ class Desktop {
       content: url,
       area: area,
       offset: offset,
-      anim: 0,
+      anim: 1,
       isOutAnim: true,
       skin: 'win10-open-iframe',
       cancel: function (index, layero) {
