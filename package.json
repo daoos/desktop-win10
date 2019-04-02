@@ -1,6 +1,6 @@
 {
   "name": "desktop-win10",
-  "version": "0.0.7-b",
+  "version": "0.0.7-d",
   "main": "dist/desktop.min.js",
   "files": [
     "dist",
@@ -13,6 +13,7 @@
     "build": "node build/build.js && npm run dist:style"
   },
   "dependencies": {
+    "desktop-layer": "0.0.3",
     "jquery": "^3.2.1",
     "vue-grid-layout": "^2.1.9"
   },
