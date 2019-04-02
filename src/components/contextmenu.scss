@@ -1,0 +1,36 @@
+.content-menu{
+  left: 0;
+  top: 0;
+  position: fixed;
+  width: 150px;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  border: #CCC 1px solid;
+  display: none;
+  border-radius: 5px;
+  z-index: 99999999;
+  ul{
+    margin: 0px;
+    padding: 0px;
+    hr{
+      margin: 0;
+      height: 0px;
+      border: 0px;
+      border-bottom: rgb(233, 233, 233) 1px solid;
+      border-top: none
+    }
+    li{
+      transition: background-color 0.5s;
+      cursor: default;
+      padding: 0px 1em;
+      list-style: none;
+      line-height: 30px;
+      height: 30px;
+      margin: 3px 0;
+      font-size: 13px;
+      &:hover{
+        background-color: #DDD;
+      }
+    }
+  }
+}
