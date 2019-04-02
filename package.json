@@ -1,6 +1,6 @@
 {
   "name": "desktop-win10",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "dist/desktop.min.js",
   "files": [
     "dist",
