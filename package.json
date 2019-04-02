@@ -1,6 +1,6 @@
 {
   "name": "desktop-win10",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/desktop.min.js",
   "files": [
     "dist",
@@ -9,7 +9,8 @@
   "author": "Haijun Zhang",
   "scripts": {
     "dev": "webpack-dev-server --config build/webpack.dev.js --progress",
-    "build": "node build/build.js"
+    "dist:style": "gulp --gulpfile build/build-style.js",
+    "build": "node build/build.js && npm run dist:style"
   },
   "dependencies": {
     "jquery": "^3.2.1",
@@ -37,6 +38,11 @@
     "eslint-plugin-standard": "^4.0.0",
     "file-loader": "^3.0.1",
     "friendly-errors-webpack-plugin": "^1.7.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^3.9.3",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.1",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.5.0",
     "node-notifier": "^5.4.0",
