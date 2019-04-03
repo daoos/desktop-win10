@@ -114,10 +114,10 @@ export default {
 </script>
 <style lang="scss" scoped>
   .desktop-wrapper {
+    position: relative;
     width: 100%;
     height: 100%;
     background-size: 100% 100%;
-    position: fixed;
     background: url("/static/img/wallpapers/main.jpg");
     @import "./contextmenu";
   }

@@ -76,6 +76,11 @@ $(function () {
       'pic': '/static/plugins/theme_switcher/bg/bg15.jpg',
       'thumb': './bg/bg15_small.jpg',
       'title': 'Win7'
+    },
+    {
+      'pic': '/static/plugins/theme_switcher/bg/bg16.jpg',
+      'thumb': './bg/bg16.jpg',
+      'title': '神秘'
     }
   ]
 

@@ -66,7 +66,7 @@ export default {
     overflow-y: auto;
     color: white;
     box-sizing: border-box;
-    z-index: 1000;
+    z-index: 19930000;
     &.hide-message{
       right: -350px
     }

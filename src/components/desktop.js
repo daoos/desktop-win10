@@ -6,6 +6,10 @@ const layer = require('desktop-layer')
 class Desktop {
   constructor () {
     this.init()
+    const url = localStorage.getItem('desktop-win10-bg')
+    if (url) {
+      this.setBackground(url)
+    }
     this.openedWindows = []
   }
   init () {
@@ -25,6 +29,7 @@ class Desktop {
   }
   setBackground (url) {
     $('.desktop-wrapper').css({background: `url('${url}')`});
+    localStorage.setItem('desktop-win10-bg', url)
   }
   // 获取打开窗口层级最高的展示
   checkTop () {
@@ -165,7 +170,7 @@ class Desktop {
       content: url,
       area: area,
       offset: offset,
-      anim: 1,
+      anim: 0,
       isOutAnim: true,
       skin: 'win10-open-iframe',
       cancel: function (index, layero) {
